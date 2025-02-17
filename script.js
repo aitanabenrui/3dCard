@@ -22,8 +22,8 @@ function handleTouchMove(e) {
     const x = touch.clientX - rect.left;
     const y = touch.clientY - rect.top;
 
-    const rotateX = ((y / rect.height) - 0.5) * 40; // Aumenta la velocidad de movimiento
-    const rotateY = ((x / rect.width) - 0.5) * -40; // Aumenta la velocidad de movimiento
+    const rotateX = ((y / rect.height) - 0.5) * 100; // Aumenta la velocidad de movimiento
+    const rotateY = ((x / rect.width) - 0.5) * -100; // Aumenta la velocidad de movimiento
 
     card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 }
